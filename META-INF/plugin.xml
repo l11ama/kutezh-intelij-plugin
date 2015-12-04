@@ -1,0 +1,43 @@
+<idea-plugin version="2">
+  <id>name.lamanov.intelijplugins.kutezh</id>
+  <name>Kutezh</name>
+  <version>1.0</version>
+
+  <!-- please see https://confluence.jetbrains.com/display/IDEADEV/Build+Number+Ranges for description -->
+  <idea-version since-build="131"/>
+
+  <!-- please see https://confluence.jetbrains.com/display/IDEADEV/Plugin+Compatibility+with+IntelliJ+Platform+Products
+       on how to target different products -->
+
+  <depends>com.intellij.modules.platform</depends>
+
+  <extensions defaultExtensionNs="com.intellij">
+    <!-- Add your extensions here -->
+  </extensions>
+
+  <application-components>
+    <!-- Add your application components here -->
+    <component>
+      <implementation-class>name.lamanov.intelijplugins.kutezh.KutezhRegistration</implementation-class>
+    </component>
+  </application-components>
+
+
+  <actions>
+    <action id="MyNichosi" class="name.lamanov.intelijplugins.kutezh.ShowAction" text="Show Nichosi">
+      <add-to-group group-id="HelpMenu" anchor="last"/>
+      <keyboard-shortcut keymap="$default" first-keystroke="ctrl alt N"/>
+    </action>
+
+    <action id="MyNichosiInLine" class="name.lamanov.intelijplugins.kutezh.ShowNichosi" text="Show Nichosi in Line">
+      <add-to-group group-id="HelpMenu" anchor="last"/>
+      <keyboard-shortcut keymap="$default" first-keystroke="ctrl alt 0"/>
+    </action>
+
+    <action id="MyKutezh" class="name.lamanov.intelijplugins.kutezh.ShowKutezh">
+      <keyboard-shortcut keymap="$default" first-keystroke="ctrl alt K"/>
+    </action>
+
+  </actions>
+
+</idea-plugin>
