@@ -24,14 +24,9 @@
 
 
   <actions>
-    <action id="MyNichosi" class="name.lamanov.intelijplugins.kutezh.ShowAction" text="Show Nichosi">
+    <action id="MyNichosi" class="name.lamanov.intelijplugins.kutezh.ShowNichosi" text="Show Nichosi">
       <add-to-group group-id="HelpMenu" anchor="last"/>
       <keyboard-shortcut keymap="$default" first-keystroke="ctrl alt N"/>
-    </action>
-
-    <action id="MyNichosiInLine" class="name.lamanov.intelijplugins.kutezh.ShowNichosi" text="Show Nichosi in Line">
-      <add-to-group group-id="HelpMenu" anchor="last"/>
-      <keyboard-shortcut keymap="$default" first-keystroke="ctrl alt 0"/>
     </action>
 
     <action id="MyKutezh" class="name.lamanov.intelijplugins.kutezh.ShowKutezh">
